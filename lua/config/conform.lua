@@ -49,10 +49,8 @@ vim.keymap.set("n", "<leader>f", function()
 	end
 
 	if use_conform then
-		print("conform")
 		require("conform").format({ async = true, lsp_fallback = true })
 	else
-		print("lsp")
 		vim.lsp.buf.format()
 	end
 end)
