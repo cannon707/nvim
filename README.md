@@ -5,7 +5,7 @@
 # todos
 
 - [ ] treesitter (this is now tree-sitter-cli)
-- [ ] undotree
+- [x] undotree
 - [ ] telescope (grep like search)
 - [ ] harpoon
 - [ ] clean up lsp stuff more
