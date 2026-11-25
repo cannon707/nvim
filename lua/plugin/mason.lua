@@ -10,9 +10,9 @@ local lsp_servers = {
 }
 
 local mason_formatters = {
-	"lua-language-server",
-	"yaml-language-server",
-	"stylua",
+	"lua-language-server",  --depends on node
+	"yaml-language-server", --depends on node
+	"stylua",               --depends on unzip
 	"google-java-format",
 }
 

@@ -1,0 +1,7 @@
+require("plugin.colors")
+require("plugin.conform")
+require("plugin.harpoon")
+require("plugin.mason")
+--require("plugin.treesitter")
+--require("plugin.lsp")
+require("plugin.undotree")
