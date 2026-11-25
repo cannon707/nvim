@@ -4,7 +4,7 @@
 
 # todos
 
-- [ ] treesitter (this is now tree-sitter-cli)
+- [x] treesitter (requires, c compiler, rust for cargo -> install tree-sitter-cli)
 - [x] undotree
 - [ ] telescope (grep like search)
 - [x] harpoon
