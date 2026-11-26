@@ -21,6 +21,8 @@ local parsers = {
 	"jsdoc",
 	"bash",
 	"json5",
+    "markdown",
+    "markdown_inline",
 }
 
 local filetypes = {}
