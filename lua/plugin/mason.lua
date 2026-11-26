@@ -12,10 +12,11 @@ local lsp_servers = {
 }
 
 local mason_package_names = {
-	"lua-language-server", --depends on node
-	"yaml-language-server", --depends on node
-	"stylua", --depends on unzip
-	"google-java-format",
+	"lua-language-server", --depends on node lsp
+	"yaml-language-server", --depends on node lsp
+	"stylua", --depends on unzip --formatter
+	"google-java-format", --formatter
+    "markdownlint-cli2", --linter
 }
 
 local servers = vim.list_extend(vim.list_extend({}, lsp_servers), mason_package_names)

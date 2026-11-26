@@ -8,6 +8,16 @@ vim.lsp.config("lua_ls", {
 	},
 })
 
+-- yamlls complains with warnings about these filetypes that neovim doesn't
+-- know about. This is to keep the warnings quiet
+vim.filetype.add({
+    extension = {
+        ["yaml.docker-compose"] = "yaml.docker-compose",
+        ["yaml.gitlab"] = "yaml.gitlab",
+        ["yaml.helm-values"] = "yaml.helm-values",
+    },
+})
+
 vim.lsp.config("marksman", {
     cmd = { "marksman", "server" },
     filetypes = { "markdown" },
