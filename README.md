@@ -2,7 +2,7 @@
 
 0.12
 
-# todos
+## Todos
 
 - [x] treesitter (requires, c compiler, rust for cargo -> install tree-sitter-cli)
 - [x] undotree
