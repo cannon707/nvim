@@ -1,3 +1,6 @@
+--devicons requires a nerd font https://www.nerdfonts.com/font-downloads
+-- markdown and markdown_inline treesitter
+
 vim.pack.add({
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 	{ src = "https://github.com/folke/trouble.nvim" },
@@ -9,17 +12,26 @@ require("nvim-web-devicons").setup({
 })
 
 require("trouble").setup({
+	focus = true,
+	win = { type = "float" },
 	color_icons = true,
-	default = true,
+	modes = {
+		symbols = {
+			focus = true,
+			win = {
+				type = "float",
+			},
+		},
+	},
 })
 
 local trouble = require("trouble")
 
-vim.keymap.set( "n", "<leader>xx", function()
-    trouble.toggle("diagnostics")
+vim.keymap.set("n", "<leader>xx", function()
+	trouble.toggle("diagnostics")
 end, { desc = "Diagnostics (Trouble)" })
 
-vim.keymap.set( "n", "<leader>xX", function()
+vim.keymap.set("n", "<leader>xX", function()
 	trouble.toggle("diagnostics", { filter = { buf = 0 } })
 end, { desc = "Buffer Diagnostics (Trouble)" })
 
