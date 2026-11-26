@@ -8,6 +8,7 @@ vim.pack.add({
 local lsp_servers = {
 	"lua_ls",
 	"yamlls", -- yaml-language-server yamlls (keywords: yaml)
+	"marksman",
 }
 
 local mason_package_names = {
@@ -26,9 +27,9 @@ require("mason").setup({
 	},
 })
 
-require("mason-lspconfig").setup({ automatic_enable = {
+require("mason-lspconfig").setup({
 	automatic_enable = false,
-} })
+})
 require("mason-tool-installer").setup({
 	ensure_installed = servers,
 })

@@ -8,9 +8,16 @@ vim.lsp.config("lua_ls", {
 	},
 })
 
+vim.lsp.config("marksman", {
+    cmd = { "marksman", "server" },
+    filetypes = { "markdown" },
+    root_markers = { ".marksman.toml", ".git" },
+})
+
 vim.lsp.enable({
 	"lua_ls",
 	"yamlls",
+    "marksman",
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {

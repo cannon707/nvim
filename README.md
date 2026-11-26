@@ -6,7 +6,7 @@
 
 - [x] treesitter (requires, c compiler, rust for cargo -> install tree-sitter-cli)
 - [x] undotree
-- [ ] telescope (grep like search)
+- [x] telescope (grep like search)
 - [x] harpoon
 - [ ] clean up lsp stuff more
 - [ ] vim-fugitive
